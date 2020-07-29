@@ -10,7 +10,7 @@ Generates a random key file for use with PowerShell string encryption
 The file path and name to the file to output
 
 .EXAMPLE
-.\Create_Key_File.ps1 -OutputFile "ENV:UserProfile\Desktop\Key.key"
+.\Create_Key_File.ps1 -OutputFile "$ENV:UserProfile\Desktop\Key.key"
 
 .NOTES
 Change log:
