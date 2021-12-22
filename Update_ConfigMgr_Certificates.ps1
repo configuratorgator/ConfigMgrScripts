@@ -24,7 +24,9 @@ PREREQUISITES AND ASSUMPTIONS:
     a. This can easily be changed in the UpdateDistributionPointCertificate function
 5. The IIS bindings are not limited to specific IPs
     a. This can easily be changed in the UpdateWebServerCertificate function
-    
+6. If your servers allow unsigned PowerShell to run, this script will do everything for you.  If they only allow signed code,
+    you, will need to place a signed copy of the code defined in the $RenewalScriptCode variable on each server and pass that
+    location into the CertRenewalScriptPath parameter    
 
 .PARAMETER CertPassword
 String.  The plain-text password to use when exporting the Distibution Point certificate.
